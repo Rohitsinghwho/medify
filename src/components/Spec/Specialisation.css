@@ -1,0 +1,50 @@
+
+.Sp{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.SpItems{
+    width: 270px;
+    height: 171px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 70px 22px 70px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 5px 10px #D5DBE470;
+    cursor: pointer;
+    /* gap:10px */
+}
+.SpItems span{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #ABB6C7;
+}
+.Spec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+   background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+    padding: 20px;
+gap: 50px;
+
+}
+.Spec h2{
+    font-weight: 600;
+    font-size: 48px;
+    color: #1B3C74;
+
+}
+
+@media (max-width:769px){
+    .Spec h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+}

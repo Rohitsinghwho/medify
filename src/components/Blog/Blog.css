@@ -1,0 +1,179 @@
+.BlogMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.BContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+.BContainerHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.BContainerHeadingFirst{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2AA7FF;
+}
+.BContainerHeadingSecond{
+    font-size: 48px;
+    font-weight: 600;
+    color: #1B3C74;
+}
+
+.BContainerItems{
+    display: flex;
+    gap: 15px;
+}
+.BContainerItem img {
+  width: 364px;
+  height: 295px;
+  border-radius: 8px;
+  border-width: 0px;
+  object-fit: cover;
+}
+.BContainerItemDate {
+  display: flex;
+  gap: 30px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #77829d;
+  align-items: center;
+}
+.BContainerItemDes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.BContainerItemTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1b3c74;
+}
+.BContainerItemAuthor {
+  font-size: 17px;
+  font-size: 500;
+  color: #1b3c74;
+}
+.BContainerItemDes img {
+  height: 32px;
+  width: 32px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.BContainerItem {
+  height: fit-content;
+  width: 365px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 363;
+  opacity: 1;
+  border-width: 1px solid #ffffff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+.BContainerItemDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+@media (max-width:1025px){
+.BContainerItem img {
+border: 1px solid blue;
+  width: 250px;
+  height: 275px;
+  border-radius: 8px;
+  border-width: 0px;
+  object-fit: cover;
+}
+.BContainerItemDate {
+  gap: 25px;
+  font-size: 16px;
+ 
+}
+
+.BContainerItemTitle {
+  font-size: 17px;
+ 
+}
+.BContainerItemAuthor {
+  font-size: 16px;
+  
+}
+.BContainerItemDes img {
+  height: 30px;
+  border-radius: 50%;
+
+  width: 30px;
+}
+.BContainerItem {
+  width: 260px;
+}
+}
+
+@media (max-width:769px){
+.BContainerItem img {
+  width: 210px;
+  height: 215px;
+  border-radius: 8px;
+  border-width: 0px;
+  object-fit: cover;
+}
+.BContainerItemDate {
+  gap: 23px;
+  font-size: 14px;
+ 
+}
+
+.BContainerItemTitle {
+  font-size: 15px;
+ 
+}
+.BContainerItemAuthor {
+  font-size: 14px;
+  
+}
+.BContainerItemDes img {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+}
+.BContainerItem {
+  width: 210px;
+
+}
+.BContainerHeadingFirst{
+    font-size: 14px;
+  
+}
+.BContainerHeadingSecond{
+    font-size: 30px;
+
+}
+}
+
+@media (max-width:426px){
+    .BContainerItems{
+        flex-direction: column;
+    }
+    .BContainerHeadingFirst{
+    font-size: 13px;
+  
+}
+.BContainerHeadingSecond{
+    font-size: 25px;
+}
+}

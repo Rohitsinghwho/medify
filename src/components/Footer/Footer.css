@@ -1,0 +1,161 @@
+
+
+footer{
+    background-color: #1B3C74;
+    display: flex;
+    justify-content: center;
+    height: 425px;
+    align-items: center;
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    cursor: pointer;
+    
+}
+.logoContainer img{
+    object-fit: cover;
+    height: fit-content;
+    width: fit-content;
+}
+.logoContainer span{
+    color: #2AA8FF;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2%;
+}
+.FoContainer{
+    /* border: 1px solid black; */
+    display: flex;
+    
+    height: 254px;
+    flex-direction: column;
+    gap: 30px;
+}
+.FContainerLinks{
+    
+    display: flex;
+    gap: 200px;
+    height: 235px;
+    justify-content: space-between;
+}
+hr{
+    color: white;
+  
+
+}
+.FContainerLinksItems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 235px;
+
+
+}
+
+.FContainerLinksItem{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.FContainerLinksItem span{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.FContainerLogoImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* height: 235px; */
+}
+.FContainerLinksLogoImg img{
+    object-fit:cover;
+    height: 35.2px;
+    width: 35.2px;
+    cursor: pointer;
+}
+.FContainerLinksLogoImg{
+    display: flex;
+    gap: 10px;
+}
+.FContainerText{
+    color: #FFFFFF;
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 400;   
+  
+
+}
+
+
+@media (max-width:1025px){
+    .FContainerLinks{
+       gap: 100px;
+    }
+}
+
+@media (max-width:769px){
+    .FContainerLinks{
+       gap:50px;
+    }
+    .logoContainer{
+        justify-content: start;
+    }
+    .FContainerText{
+    font-size: 14px;
+    }
+    .FContainerLinksLogoImg img{
+    height: 30.2px;
+    width: 30.2px;
+    }
+    .FContainerLinksItem span{
+    font-size: 14px;
+    }
+
+}
+
+
+@media (max-width:426px){
+    footer{
+       
+        height: 860px;
+        align-items: start;
+    }
+    .FoContainer{
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .FContainerLinks{
+        flex-direction: column;
+        height: max-content;
+        gap: 15px;
+    }
+    .FContainerLinksItems{
+        flex-direction: column;
+    
+        height: 220px;
+    }
+    .logoContainer{
+        justify-content: start;
+    }
+    .FContainerText{
+    font-size: 12px;
+    }
+    .FContainerLogoImg{
+        gap: 20px;
+    }
+    .FContainerLinksLogoImg img{
+    height: 30.2px;
+    width: 30.2px;
+    }
+    .FContainerLinksItem span{
+    font-size: 12px;
+    }
+}

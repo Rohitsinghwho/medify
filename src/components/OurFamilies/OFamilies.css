@@ -1,0 +1,109 @@
+
+.OFamily{
+    background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50px;
+    /* height: 789px; */
+}
+.OFamilyText{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.OFamilyContainer{
+    height: 714px;
+    width: 1185px;
+    display: flex;
+    padding: 10px;
+}
+
+.OFamilyTextOne{
+   font: 600 17px 'poppins';
+    color: #2AA7FF;
+}
+.OFamilyTextTwo{
+    font: 600 48px 'poppins';
+    color: #1B3C74;
+}
+
+.OFamilyTextThree{
+    font: 500 17px 'poppins';
+    color: #77829D;
+}
+
+.OFamilyIcons{
+    
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.OFamilyIconItem{
+    width: 242.5px;
+    height: 304px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 45px -5px #00000012;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.OFamilyIconFrame{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #EBF7FF;
+    padding: 25px;
+}
+.OFamilyIconText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.OFamilyIconTextNumber{
+    font: 600 48px 'poppins';
+    color: #1B3C74;
+    text-align: center;
+}
+.OFamilyIconTextDesc{
+    font: 500 18px 'poppins';
+    color: #77829D;
+    text-align: center;
+}
+
+@media (max-width:769px){
+    .OFamilyContainer{
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+    }
+    .OFamilyText{
+        width: 100%;
+    }
+    .OFamilyIcons{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .OFamilyIconItem{
+        width: 210px;
+        height: 220px;
+    }
+    .OFamilyIconTextNumber{
+        font: 600 40px 'poppins';
+    }
+    .OFamilyIconTextDesc{
+          font: 500 15px 'poppins';
+      
+}
+}

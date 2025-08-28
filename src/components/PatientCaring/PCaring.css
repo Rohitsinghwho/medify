@@ -1,0 +1,277 @@
+.PCaringMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 598px;
+  background: linear-gradient(
+    81deg,
+    #e7f0ff 9.01%,
+    rgba(232, 241, 255, 0.47) 89.11%
+  );
+}
+.PCaring {
+  display: flex;
+  height: 486px;
+  width: 1153px;
+}
+
+.PCaringText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 4;
+  padding: 5px;
+}
+
+.PCaringT {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2aa7ff;
+}
+
+.PCaringD {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1b3c74;
+}
+
+.PCaringD span {
+  color: #2aa7ff;
+}
+
+.PCaringPara {
+  color: #77829d;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.PCaringOp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.PCaringOp span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1b3c74;
+}
+
+.PCaringImageContainer {
+  display: flex;
+  align-items: center;
+}
+.PCaringImageTOne {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1b3c74;
+}
+.PCaringImageTTwo {
+  font-size: 15px;
+  font-weight: 500;
+  color: #77829d;
+}
+.PCaringPhoneImage {
+  width: 34px;
+  height: 34px;
+  background-color: #2aa7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.PCaringImageOne {
+  height: 275px;
+  width: 332px;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  position: relative;
+  left: 175px;
+  top: -80px;
+}
+.PCaringImageText {
+  width: 235px;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0px 40px 40px -15px #94b6ce26;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1000;
+  top: 50px;
+  left: 30px;
+}
+
+.PCaringImageTwo {
+  height: 275px;
+  width: 332px;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  position: relative;
+  left: 30px;
+  top: -150px;
+}
+
+@media (max-width: 769px) {
+   .PCaringMain {
+    height: 630px;
+    align-items: normal;
+  }
+  .PCaring {
+    flex-direction: column;
+  }
+  .PCaringImageOne {
+    width: 282px;
+    height: 215px;
+    top: -5px;
+  }
+  .PCaringImageTwo {
+    width: 282px;
+    height: 215px;
+    /* top: -5px; */
+    top: -50px;
+    left: 120px;
+  }
+  .PCaringImageText {
+    left: 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .PCaringMain {
+    height: 800px;
+    align-items: normal;
+  }
+  .PCaring {
+    flex-direction: column;
+  }
+  .PCaringImageOne {
+    width: 225px;
+    height: 173px;
+    top: -5px;
+  }
+  .PCaringImageTwo {
+    width: 225px;
+    height: 173px;
+    top: -50px;
+    left: 120px;
+  }
+
+  .PCaringImageText {
+    left: 10px;
+  }
+  .PCaringImageTOne {
+    font-size: 12px;
+  }
+  .PCaringImageTTwo {
+    font-size: 12px;
+  }
+  .PCaringT {
+    font-size: 14px;
+  }
+
+  .PCaringD {
+    font-size: 40px;
+  }
+
+  .PCaringPara {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .PCaringMain {
+    height: 800px;
+    align-items: normal;
+  }
+  .PCaring {
+    flex-direction: column;
+  }
+  .PCaringImageOne {
+    width: 225px;
+    height: 173px;
+    top: -5px;
+    left: 130px;
+  }
+  .PCaringImageTwo {
+    width: 225px;
+    height: 173px;
+    top: -50px;
+    left: 20px;
+  }
+
+  .PCaringImageText {
+    left: 10px;
+    top: 10px;
+  }
+  .PCaringImageTOne {
+    font-size: 12px;
+  }
+  .PCaringImageTTwo {
+    font-size: 12px;
+  }
+  .PCaringT {
+    font-size: 14px;
+  }
+
+  .PCaringD {
+    font-size: 40px;
+  }
+
+  .PCaringPara {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 321px) {
+  .PCaringMain {
+    height: 800px;
+    align-items: normal;
+  }
+  .PCaring {
+    flex-direction: column;
+  }
+  .PCaringImageOne {
+    width: 225px;
+    height: 173px;
+    top: -5px;
+    left: 80px;
+  }
+  .PCaringImageTwo {
+    width: 225px;
+    height: 173px;
+    top: -50px;
+    left: 20px;
+  }
+
+  .PCaringImageText {
+    left: 10px;
+    top: 10px;
+  }
+  .PCaringImageTOne {
+    font-size: 12px;
+  }
+  .PCaringImageTTwo {
+    font-size: 12px;
+  }
+  .PCaringT {
+    font-size: 10px;
+  }
+
+  .PCaringD {
+    font-size: 30px;
+  }
+
+  .PCaringPara {
+    font-size: 12px;
+  }
+  .PCaringOp span {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,246 @@
+
+.heroContainer{
+    display: flex;
+    align-items:flex-start;
+    padding: 10px;
+    justify-content: space-between;
+  background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+
+    height: 700px;
+}
+
+.heroTextContainer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.heroContainer img{
+    object-fit: cover;
+    margin-top: 30px;
+   
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:768px){
+    .heroContainer{
+        flex-direction: column;
+    }
+
+    .heroContainer img{
+         width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+form{
+    /* background-color: blue; */
+    display: flex;
+    gap: 10px;
+}
+.InputFields{
+    height: 50px;
+    width: 285px;
+    border-radius: 8px;
+    border: 1px;
+    display: flex;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+.InputFields input{
+    height: 100%;
+    padding: 0px 5px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    background-color: #F0F0F0;
+
+}
+.Btn{
+    display: flex;
+    align-items: center;
+
+}
+#searchBtn{
+    background-color: #2AA8FF;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    border-width: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.formContainer{
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 429px;
+    width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px #1028511C  ;
+    bottom: -130px;
+    right: 350px;
+    
+}
+.formContainer form{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+}
+.itemsFormContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemsFormContainer span{
+    color:'#ABB6C7';
+}
+.FormContainerIcons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.FormContainerInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.heroTextOne{
+    font-size: 31px;
+    font-weight: 500;
+    letter-spacing: 2%;
+}
+.heroTextTwo{
+    font-size: 56px;
+    font-weight: 500;
+    letter-spacing: 2%;
+}
+.heroTextThree{
+    font-size: 20px;
+    letter-spacing: 2%;;
+    color:#5C6169 ;
+}
+.heroTextTwoInner{
+    color: #2AA8FF;
+}
+
+
+@media (max-width:1025px){
+    .formContainer{
+    height: 350px;
+    width: 900px;
+    bottom: -300px;
+    right: 60px;
+    }
+}
+@media (max-width:769px){
+    .heroTextContainer{
+        margin-top: 5px;
+    }
+    .formContainer{
+   
+    height: 329px;
+    width: 700px;
+    padding: 20px;
+    bottom: -400px;
+    right: 35px;
+    }
+}
+
+@media (max-width:429px){
+.formContainer{
+    height: 600px;
+    width: 400px;
+    padding: 20px;
+    top: 700px;
+    right: 15px;
+    }
+    form{
+        flex-direction: column;
+    }
+    .InputFields{
+        width: 350px;
+    }
+    .InputFields input{
+        width: 100%;
+    }
+    .FormContainerIcons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:30px;
+        width: 100%;
+    }
+}
+
+@media (max-width:376px){
+.formContainer{
+    height: 600px;
+    width: 350px;
+    padding: 20px;
+    top: 700px;
+    right: 15px;
+    }
+    form{
+        flex-direction: column;
+    }
+    .InputFields{
+        width: 300px;
+    }
+    .InputFields input{
+        width: 100%;
+    }
+    .FormContainerIcons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:30px;
+        width: 100%;
+    }
+}
+
+@media (max-width:321px){
+.formContainer{
+    height: 600px;
+    width: 300px;
+    padding: 20px;
+    top: 700px;
+    right: 15px;
+    }
+    form{
+        flex-direction: column;
+    }
+    .InputFields{
+        width: 250px;
+    }
+    .InputFields input{
+        width: 100%;
+    }
+    .FormContainerIcons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:10px;
+        width: 100%;
+    }
+    .FormContainerInner span{
+        margin-top:10px;
+    }
+}

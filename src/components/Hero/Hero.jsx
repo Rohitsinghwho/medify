@@ -1,0 +1,72 @@
+import React from 'react'
+import bannerDoc from "../../assets/bannerDoc.png"
+import "./Hero.css"
+import ButtonPrimary from "../Button/ButtonPrimary"
+import { IoIosSearch } from "react-icons/io";
+import { BsHospital } from "react-icons/bs";
+import { ImLab } from "react-icons/im";
+import { FaUserDoctor } from "react-icons/fa6";
+import { FaBriefcaseMedical } from "react-icons/fa";
+import { FaAmbulance } from "react-icons/fa";
+const Hero = () => {
+  return (
+    <section className='heroContainer'>
+        <div className='heroTextContainer'>
+            <div className='heroText'>
+            <span className='heroTextOne'>Skip the travel! Find Online</span>
+            <span className='heroTextTwo'>Medical <span  className="heroTextTwoInner">Centers</span></span>
+            <span className='heroTextThree' >Connect instantly with a 24x7 specialist or choose to video visit a particular doctor.</span>
+            </div>
+            <ButtonPrimary btnName={"Find Centers"}/>
+        </div>
+
+        <img  src={bannerDoc} alt="doctors" />
+        <div  className='formContainer'>
+         <form>
+                <div className='InputFields'>
+                <IoIosSearch size={30} style={{width:'50px'}} color='#9CA3AF' />
+                <input type="text" />
+                </div>
+                <div className='InputFields'>
+                <IoIosSearch size={30} style={{width:'50px'}} color='#9CA3AF' />
+                
+                <input type='text'/>
+                </div>
+                <div className='Btn'>
+                <button type='submit' id='searchBtn' >
+                    <IoIosSearch size={30} style={{width:'50px'}}/>
+                    Search
+                </button>
+                </div>
+          </form>
+          <div className='FormContainerInner'>
+            <span>You may be looking for</span>
+            <div className='FormContainerIcons'>
+                  <div className='itemsFormContainer'>
+                      <FaUserDoctor size={60} color='#2AA7FF'/>
+                      <span>Doctors</span>
+                  </div>
+                   <div className='itemsFormContainer'>
+                     <ImLab  size={60} color='#2AA7FF'/>
+                      <span>Labs</span>
+                  </div>
+                   <div className='itemsFormContainer'>
+                     <BsHospital  size={60} color='#2AA7FF'/>
+                      <span>Hospitals</span>
+                  </div>
+                   <div className='itemsFormContainer'>
+                     <FaBriefcaseMedical  size={60} color='#2AA7FF'/>
+                      <span>Medical Store</span>
+                  </div>
+                  <div className='itemsFormContainer'>
+                    <FaAmbulance  size={60} color='#2AA7FF'/>
+                    <span>Ambulance</span>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  )
+}
+
+export default Hero

@@ -1,0 +1,101 @@
+
+
+
+.FMain{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FContainer{
+    display: flex;
+    flex-direction: column;
+    width: 1120px;
+    padding: 10px;
+    gap: 50px;
+   
+
+}
+
+.FContainerHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FContainerHeadingOne{
+font-size: 16px;
+    font-weight: 600;
+    color: #2AA7FF;
+}
+
+.FContainerHeadingTwo{
+ font-size: 48px;
+    font-weight: 600;
+    color: #1B3C74;
+}
+
+.FContainerItems{
+    display: flex;
+    gap: 30px;
+}
+
+.FContainerImageDiv img{
+    width: 500px;
+    height: 480px;
+    border: 10px solid #FFFFFF;
+    object-fit: cover;
+    box-shadow: 0px 15px 55px -10px #00000017;
+    border-radius: 8px;
+}
+
+
+@media (max-width:768px){
+    .FContainer{
+        width: max-content;
+    }
+    .FContainerItems{
+        flex-direction: column;
+    }
+   .FContainerImageDiv{
+    text-align: center;
+   }
+    .FContainerImageDiv img{
+    width: 380px;
+    height: 370px;
+    }
+    
+    .FContainerHeadingOne{
+        font-size: 14px;
+        text-align: center;
+    
+    }
+
+    .FContainerHeadingTwo{
+         font-size: 30px;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width:321px){
+  
+    .FContainerImageDiv img{
+    width: 300px;
+    height: 300px;
+    }
+    
+    .FContainerHeadingOne{
+        font-size: 13px;
+        text-align: center;
+    
+    }
+
+    .FContainerHeadingTwo{
+         font-size: 25px;
+        text-align: center;
+    }
+
+}

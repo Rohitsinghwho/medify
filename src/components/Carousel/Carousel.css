@@ -1,0 +1,40 @@
+
+
+.crouselInner{
+   padding: 150px 50px 0px 50px;
+  
+    
+}
+.slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height: 200px;
+}
+.slides img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (max-width:769px){
+    .crouselInner{
+   padding: 300px 50px 0px 50px;
+   
+    
+}
+}
+
+
+@media (max-width:426px){
+    .crousel{
+
+    height:auto 
+}
+    .crouselInner{
+   padding: 600px 50px 0px 50px;
+   
+    
+}
+}
