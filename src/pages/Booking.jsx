@@ -1,11 +1,14 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Search from '../components/Search/Search'
 import HospitalContext from '../context/HospitalContext'
 import { BsHospital } from "react-icons/bs";
 import "./Booking.css"
 const Booking = () => {
-
-    const {bookedSlot}=useContext(HospitalContext);
+    const [booked,setBooked]=useState([]);
+    useEffect(()=>{
+        const {bookedSlot}=useContext(HospitalContext);
+        setBooked(bookedSlot);
+    },[]);
   return (
      <div className="">
         <div className="AvailableMedicalCenters MBooking">
@@ -16,8 +19,8 @@ const Booking = () => {
         <Search/>
       </div>
       <div className="SearchResultContainer">
-        {bookedSlot?(
-            bookedSlot?.map((item)=>(
+        {booked?(
+            booked?.map((item)=>(
             <div className="SearchResultsContainer" key={item.bookedAt}>
               <div className="ResultBox">
                 <div>
