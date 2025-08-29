@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className='logoContainerOutside'>
         <div className='logoContainer'>
         <img src={logo} alt="logo" />
-        <span>Medify</span>
+        <Link to='/'>Medify</Link>
         </div>
         <div className='hamburger' onClick={()=>setToogle(prev=>!prev)}>
           {toggle?"✖":"☰"}

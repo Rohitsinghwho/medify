@@ -16,33 +16,37 @@ const Booking = () => {
         <Search/>
       </div>
       <div className="SearchResultContainer">
-          {bookedSlot?.map((item)=>(
-          <div className="SearchResultsContainer" key={item.hospitalId}>
-            <div className="ResultBox">
-              <div>
-                <div className="HospitalLogo">
-                  <BsHospital size={70} />
-                </div>  
-              </div>
-              <div className="HosptialNameContainer">
-                <h3>{item.hospitalName}</h3>
-                <div className="HospitalSubheading">
-                  <span className="hs1">{item.address}</span>
-                  <span className="hs2">
-                    Smilessence Center for Advanced Dentistry + 1
-                  </span>
-                  <div className="HospitalSubheading2">
-                    <span className="hs21">FREE</span>
-                    <span className="hs22">Consultation fee at clinic</span>
+        {bookedSlot?(
+            bookedSlot?.map((item)=>(
+            <div className="SearchResultsContainer" key={item.hospitalId}>
+              <div className="ResultBox">
+                <div>
+                  <div className="HospitalLogo">
+                    <BsHospital size={70} />
+                  </div>  
+                </div>
+                <div className="HosptialNameContainer">
+                  <h3>{item.hospitalName}</h3>
+                  <div className="HospitalSubheading">
+                    <span className="hs1">{item.address}</span>
+                    <span className="hs2">
+                      Smilessence Center for Advanced Dentistry + 1
+                    </span>
+                    <div className="HospitalSubheading2">
+                      <span className="hs21">FREE</span>
+                      <span className="hs22">Consultation fee at clinic</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="ATimeSlot">
-                    <p>{item.slot}</p>
+                <div className="ATimeSlot">
+                      <p>{item.slot}</p>
+                </div>
               </div>
             </div>
-          </div>
-          ))}
+            ))
+        ):(
+            <p>You do not have any bookings yet</p>
+        )}
         </div>
       </div>
     </div>
