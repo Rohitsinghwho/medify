@@ -95,9 +95,9 @@ const Hero = () => {
             />
             {stateInput && !selectedState && (
               <div className="dropdown">
-                <ul>
                 {filteredStates.map((state)=>(
                   <li
+                  style={{listStyle:"none"}}
                   key={state}
                   className="dropdownItem"
                   onClick={()=>handleStateSelect(state)}
@@ -105,7 +105,7 @@ const Hero = () => {
                     {state}
                   </li>
                 ))}
-                </ul>
+                
               </div>
             )}
           </div>
@@ -121,17 +121,18 @@ const Hero = () => {
             />
             {selectedState&&filteredCities.length > 0&&(
               <div className="dropdown">
-                <ul>
+               
               {filteredCities.map((city)=>(
                 <li
                 key={city}
+                   style={{listStyle:"none"}}
                 className="dropdownItem"
                 onClick={()=>handleCitySelect(city)}
                 >
                   {city}
                 </li>
               ))}
-                </ul>
+                
               
               </div>)}
           </div>

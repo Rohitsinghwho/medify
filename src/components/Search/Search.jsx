@@ -67,17 +67,18 @@ const Search = () => {
             />
             {stateInput && !selectedState && (
               <div className="dropdown" >
-                <ul>
+
                 {filteredStates.map((state)=>(
                   <li
                   key={state}
                   className="dropdownItem"
                   onClick={()=>handleStateSelect(state)}
+                  style={{listStyle:"none"}}
                   >
                     {state}
                   </li>
                 ))}
-                </ul>
+                
               </div>
             )}
         </div>
@@ -92,17 +93,18 @@ const Search = () => {
             />
             {selectedState&&filteredCities.length > 0&&(
               <div className="dropdown" >
-                <ul>
+              
               {filteredCities.map((city)=>(
                 <li
                 key={city}
                 className="dropdownItem"
                 onClick={()=>handleCitySelect(city)}
+                   style={{listStyle:"none"}}
                 >
                   {city}
                 </li>
               ))}
-                </ul>
+
               
               </div>)}
         </div>
