@@ -31,7 +31,7 @@ const Booking = () => {
                   </div>  
                 </div>
                 <div className="HosptialNameContainer">
-                  <h3>{item.hospitalName}</h3>
+                  <h3>{item["Hospital Name"]}</h3>
                   <div className="HospitalSubheading">
                     <span className="hs1">{item.address}</span>
                     <span className="hs2">

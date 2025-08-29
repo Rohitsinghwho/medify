@@ -13,7 +13,7 @@ const HospitalListing = () => {
   const handleDate=(hospital,slot)=>{
     const booking={
       hospitalId:hospital["Provider ID"],
-      hospitalName:hospital["Hospital Name"],
+      "Hospital Name":hospital["Hospital Name"],
       address:hospital.Address,
       state:selectedState,
       slot:slot,
