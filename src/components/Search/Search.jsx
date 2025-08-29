@@ -53,7 +53,7 @@ const Search = () => {
   );
   return (
     <form className='InputFormContainer' onSubmit={handleSearch}>
-        <div className='InputFields'>
+        <div className='InputFields' id="state">
         <IoIosSearch size={30} style={{width:'50px'}} color='#9CA3AF' />
         <input
               type="text"
@@ -66,7 +66,7 @@ const Search = () => {
               }}
             />
             {stateInput && !selectedState && (
-              <div className="dropdown" id="state">
+              <div className="dropdown" >
                 <ul>
                 {filteredStates.map((state)=>(
                   <li
@@ -81,7 +81,7 @@ const Search = () => {
               </div>
             )}
         </div>
-        <div className='InputFields'>
+        <div className='InputFields' id="city">
         <IoIosSearch size={30} style={{width:'50px'}} color='#9CA3AF' />
         <input
               type="text"
@@ -91,7 +91,7 @@ const Search = () => {
               onChange={(e) => setCityInput(e.target.value)}
             />
             {selectedState&&filteredCities.length > 0&&(
-              <div className="dropdown" id="city">
+              <div className="dropdown" >
                 <ul>
               {filteredCities.map((city)=>(
                 <li
