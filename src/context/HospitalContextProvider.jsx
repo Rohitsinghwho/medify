@@ -27,7 +27,7 @@ const HospitalContextProvider = ({children}) => {
       else{
         const data=await response.json();
         console.log(data);
-        setSelectedState(state);
+        setSelectedState(city.trim());
         setMedicalCenters(data);
         return true;
       }
