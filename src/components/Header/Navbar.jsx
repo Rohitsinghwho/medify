@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import ButtonPrimary from "../Button/ButtonPrimary"
 import logo from "../../assets/verified.png";
-// import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [toggle,setToogle]=useState(false);
   const [isMobile,setIsMobile]=useState(window.innerWidth<=768);
+  const navigate=useNavigate();
   useEffect(()=>{
     const handleResize=()=>setIsMobile(window.innerWidth<=768);
     window.addEventListener("resize",handleResize);
@@ -21,6 +23,10 @@ const Navbar = () => {
     "Faciliites"
   ]
 
+  const handleBookings=()=>{
+    console.log("clicked")
+    navigate("my-bookings")
+  }
   return (
     <nav className='navContainer'>
       <div className='logoContainerOutside'>
@@ -48,7 +54,10 @@ const Navbar = () => {
             {navItems.map((item)=>(
              <span className='navItemsMobile' key={item}>{item}</span>  
         ))}
-        <ButtonPrimary btnName={"My Bookings"}/>
+       <button className='btnPrimary' onClick={handleBookings}>
+        My Bookings
+        </button>
+  
       </div>
         )}
   

@@ -1,0 +1,10 @@
+.ATimeSlot{
+    border: 1px solid #2AA7FF;
+    padding: 5px;
+}
+.MBooking{
+    background-color: #2AA7FF;
+    padding: 10px;
+    font-family: "Poppins";
+    color: white;
+}

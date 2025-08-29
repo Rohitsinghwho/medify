@@ -1,13 +1,4 @@
-
-
-form{
-    /* background-color: blue; */
-    display: block;
-    gap: 10px;
-   
-}
 .InputFields{
-    position: relative;
     height: 50px;
     width: 285px;
     border-radius: 8px;
@@ -15,29 +6,7 @@ form{
     display: flex;
     align-items: center;
     background-color: #F0F0F0;
-}
-
-.suggestions {
-  position: absolute;   
-  background: white;    
-  border: 1px solid red;
-  border-radius: 6px;
-  width: 285px;         
-  color: red;
-  z-index: 1000;   
-  max-height: 150px;
-  top: 100%;
-  width: 100%;
-  left: 0; 
-}
-
-.suggestions li {
-  padding: 8px;
-  cursor: pointer;
-}
-
-.suggestions li:hover {
-  background: #f0f0f0;
+    position: relative;
 }
 .InputFields input{
     height: 100%;
@@ -46,24 +15,307 @@ form{
     width: 100%;
     border: none;
     background-color: #F0F0F0;
+    outline: none;
 
 }
-.Btn{
+.Searchbar{
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    margin-top: 15px;
+  
 }
-#searchBtn{
-    background-color: #2AA8FF;
+.SearchResults{
+    margin-top: 20px;
+}
+.HospitalLogo{
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    border: none;
+    background-color: #8CCFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HosptialNameContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.HospitalSubheading{
+    display: flex;
+    flex-direction: column;
+}
+.AvailableMedicalCenters{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Poppins";
+}
+.WaitTime{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787887;
+    font-family: 'Poppins';
+}
+.InputFormContainer{
+    border: 1px solid black;
+    display: flex;
+    width: 1116px;
+    height: 111px;
+    border-radius: 15px;
+    padding: 27px 24px 27px 24px;
+    gap: 29px;
+    box-shadow: 6px 6px 35px 0px #1028511C;
+    background-color: #FFFFFF;
+    justify-content: center;
+    border: none;
+}
+.ResultBox{
+    display: flex;
+    
+    width: 786px;
+    height: 269px;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 15px; */
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+.CenterVisitIn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.hs1{
+    font-family: "Poppins";
+    font-weight: 700;
     font-size: 14px;
+}
+.hs2{
+    color: #414146;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.hs21{
+    color: #02A401;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+.hs22{
+    color:#414146;
+      font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.HospitalSubheading2{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+}
+.HosptialNameContainer h3{
+    color: #14BEF0;
+}
+.HospitalSubheading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.CenterVisit{
+    display: flex;
+    align-items: end;
+    margin-bottom: 50px;
+    height: inherit;
+}
+.CenterVisitIn p{
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #01A400;
     font-weight: 500;
-    letter-spacing: 2%;
-    color: white;
-    width: 130px;
+}
+.SearchResultContainer{
+    padding: 20px;
+    margin-top: 20px;
+   
+}
+.CenterVisitIn button{
+    background-color: #2AA7FF;
+    width: 212px;
     height: 40px;
-    border-radius: 8px;
-    border-width: 0px;
+    border-radius: 4px;
+    border: 1px solid #14BEF0;
     cursor: pointer;
+}
+.DayContainer{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+.time{
+    width: 84px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #2AA7FF;
+    background: transparent;
+    cursor: pointer;
+}
+.SecondS{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  
+}
+.timeContainer{
     display: flex;
     align-items: center;
+    gap: 20px;
+}
+.timingContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    margin: 5px;
+    
+    /* justify-content: center; */
+}
+.DayTime{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.SearchResultsContainer{
+     width: 786px;
+    min-height: 200px;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 8px;
+    margin-top: 30px;
+  
+}
+@media (max-width:769px){
+    .SearchResultsContainer{
+          width: 700px;
+        height: 269px;
+
+    }
+    .ResultBox{
+        
+        width: 700px;
+        height: 269px;
+   
+}
+ .InputFormContainer{
+        flex-direction: column;
+        width: 500px;
+     
+        gap: 15px;
+        height: 180px;
+    }
+}
+@media (max-width:429px){
+
+    .SearchResultsContainer{
+          width: 380px;
+    height: 400px;
+    flex-direction: column;
+    }
+    .ResultBox{
+   
+    width: 380px;
+    height: 400px;
+    flex-direction: column;
+   
+}
+    .InputFormContainer{
+        flex-direction: column;
+        width: 380px;
+     
+        gap: 15px;
+        height: 180px;
+    }
+    .InputFields{
+        width: 350px;
+    }
+    .InputFields input{
+        width: 100%;
+    }
+  
+}
+
+@media (max-width:376px){
+
+    .InputFormContainer{
+        flex-direction: column;
+        width: 350px;
+     
+        gap: 15px;
+        height: 180px;
+    }
+    .InputFields{
+        width: 300px;
+    }
+    .InputFields input{
+        width: 100%;
+    }
+     .ResultBox{
+   
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+   
+}
+  .SearchResultsContainer{
+   
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+   
+}
+  
+}
+
+@media (max-width:321px){
+ .ResultBox{
+   
+    width: 250px;
+    height: 400px;
+    flex-direction: column;
+   
+}
+ .SearchResultsContainer{
+   
+    width: 250px;
+    height: 400px;
+    flex-direction: column;
+   
+}
+    .InputFormContainer{
+        flex-direction: column;
+        width: 300px;
+     
+        gap: 15px;
+        height: 180px;
+    }
+    .InputFields{
+        width: 250px;
+    }
+    .InputFields input{
+        width: 100%;
+    }
 }
