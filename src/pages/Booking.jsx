@@ -5,10 +5,12 @@ import { BsHospital } from "react-icons/bs";
 import "./Booking.css"
 const Booking = () => {
     const [booked,setBooked]=useState([]);
+    const {bookedSlot}=useContext(HospitalContext);
     useEffect(()=>{
-        const {bookedSlot}=useContext(HospitalContext);
-        setBooked(bookedSlot);
-    },[]);
+        if(bookedSlot){
+            setBooked(bookedSlot);
+        }
+    },[bookedSlot]);
   return (
      <div className="">
         <div className="AvailableMedicalCenters MBooking">
