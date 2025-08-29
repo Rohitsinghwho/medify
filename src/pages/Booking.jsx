@@ -18,7 +18,7 @@ const Booking = () => {
       <div className="SearchResultContainer">
         {bookedSlot?(
             bookedSlot?.map((item)=>(
-            <div className="SearchResultsContainer" key={item.hospitalId}>
+            <div className="SearchResultsContainer" key={item.bookedAt}>
               <div className="ResultBox">
                 <div>
                   <div className="HospitalLogo">

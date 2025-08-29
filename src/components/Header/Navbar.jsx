@@ -3,7 +3,7 @@ import './Navbar.css'
 import ButtonPrimary from "../Button/ButtonPrimary"
 import logo from "../../assets/verified.png";
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggle,setToogle]=useState(false);
