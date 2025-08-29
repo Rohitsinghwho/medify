@@ -17,7 +17,7 @@ const Hero = () => {
   const [states, setStates] = useState([]);
   const [city, setCity] = useState([]);
   const {saveMedicalStores}=useContext(HospitalContext);
-  const naviagte=useNavigate();
+  const navigate=useNavigate();
 
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const Hero = () => {
     if (!selectedState || !cityInput) return;
     else{
       if(saveMedicalStores(selectedState,cityInput)){
-        naviagte("hospitals");
+        navigate("hospitals");
       }
     }
   };
@@ -114,7 +114,6 @@ const Hero = () => {
 
             <input
               type="text"
-              disabled={!selectedState}
               placeholder="City"
               value={cityInput}
               onChange={(e) => setCityInput(e.target.value)}
