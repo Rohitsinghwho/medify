@@ -44,7 +44,9 @@ const Navbar = () => {
             {navItems.map((item)=>(
               <span  className='navItems' key={item}>{item}</span>  
             ))}
-            <ButtonPrimary btnName={"My Bookings"}/>
+           <button className='btnPrimary' onClick={handleBookings}>
+        My Bookings
+        </button>
           </div>
         )
       }
