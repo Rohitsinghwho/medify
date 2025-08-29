@@ -41,8 +41,8 @@ const HospitalListing = () => {
         </div>
 
         <div className="SearchResults">
-          {medicalCenters?.map((item)=>(
-          <div className="SearchResultsContainer" key={item["Provider ID"]}>
+          {medicalCenters?.map((item,idx)=>(
+          <div className="SearchResultsContainer" key={idx}>
             <div className="ResultBox">
               <div>
                 <div className="HospitalLogo">

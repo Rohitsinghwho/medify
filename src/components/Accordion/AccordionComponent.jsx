@@ -8,18 +8,22 @@ import "./AccordionComp.css"
 export default function AccordionComponent() {
   const AccordItems = [
     {
+      id:1,
       question: "Why choose our medical for your family?",
       answer:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. ",
     },
     {
+      id:2,
       question: "Why we are different from others?",
       answer:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. ",
     },
     {
+      id:3,
       question: "Trusted & experience senior care & love",
       answer:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. ",
     },
     {
+      id:4,
       question: "How to get appointment for emergency",
       answer:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. ",
     },
@@ -27,7 +31,7 @@ export default function AccordionComponent() {
   return (
     <div>
       {AccordItems.map((item)=>(
-      <Accordion className="A">
+      <Accordion className="A" key={item.id}>
         <AccordionSummary
           expandIcon={<Add />}
           aria-controls="panel1-content"

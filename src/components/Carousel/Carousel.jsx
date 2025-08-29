@@ -16,8 +16,6 @@ const Carousel = () => {
       <Swiper
         modules={[Navigation,Pagination]}
         spaceBetween={10}
-        onSlideChange={()=>console.log("slide changed")}
-        onSwiper={(swiper)=>console.log(swiper)}
         loop={true}
         pagination={{ clickable: true}}
         breakpoints={{
