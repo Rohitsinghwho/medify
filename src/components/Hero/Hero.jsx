@@ -18,7 +18,7 @@ const Hero = () => {
   const [city, setCity] = useState([]);
   const {saveMedicalStores}=useContext(HospitalContext);
   const navigate=useNavigate();
-
+  const [stateDropDownOpen,setStateDropdownOpen]=useState(false);
 
   useEffect(() => {
     fetch("https://meddata-backend.onrender.com/states")
@@ -38,6 +38,7 @@ const Hero = () => {
     setStateInput(state);
     console.log(state);
     setCityInput("");
+    setStateDropdownOpen(false);
   };
 
   const handleCitySelect = (city) => {
@@ -81,7 +82,7 @@ const Hero = () => {
       <img src={bannerDoc} alt="doctors" />
       <div className="formContainer">
         <form onSubmit={handleSearch}>
-          <div className="InputFields"  id="state">
+          <div className="InputFields"  id="state" onClick={()=>setStateDropdownOpen(true)}>
             <IoIosSearch size={30} style={{ width: "50px" }} color="#9CA3AF" />
             <input
               type="text"
@@ -93,13 +94,14 @@ const Hero = () => {
                 setCity([]);
               }}
             />
-            {stateInput && !selectedState && (
+            {stateDropDownOpen && (
               <div className="dropdown">
                 {filteredStates.map((state)=>(
                   <li
                   style={{listStyle:"none"}}
                   key={state}
                   className="dropdownItem"
+                  
                   onClick={()=>handleStateSelect(state)}
                   >
                     {state}
