@@ -1,0 +1,1 @@
+Medify — a React + Vite app to search medical centers by city/state and book appointment slots (saved to localStorage).
